@@ -1,0 +1,16 @@
+{
+  "name": "yacssl",
+  "version": "1.0.1",
+  "description": "Yet another css library",
+  "main": "src/style.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass src/ -o dist/"
+  },
+  "keywords": [],
+  "author": "Daniils Firgers",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
