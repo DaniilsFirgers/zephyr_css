@@ -1,1 +1,280 @@
-.m-xs{margin:.25rem}.p-xs{padding:.25rem}.m-sm{margin:.5rem}.p-sm{padding:.5rem}.m-md{margin:1rem}.p-md{padding:1rem}.m-lg{margin:2rem}.p-lg{padding:2rem}.m-xl{margin:4rem}.p-xl{padding:4rem}.color-black{color:#212121}.background-black{background-color:#212121}.color-black-75{color:rgba(33,33,33,.75)}.background-black-75{background-color:rgba(33,33,33,.75)}.color-black-50{color:rgba(33,33,33,.5)}.background-black-50{background-color:rgba(33,33,33,.5)}.color-black-25{color:rgba(33,33,33,.25)}.background-black-25{background-color:rgba(33,33,33,.25)}.color-white{color:#f7f7f7}.background-white{background-color:#f7f7f7}.color-white-75{color:rgba(247,247,247,.75)}.background-white-75{background-color:rgba(247,247,247,.75)}.color-white-50{color:rgba(247,247,247,.5)}.background-white-50{background-color:rgba(247,247,247,.5)}.color-white-25{color:rgba(247,247,247,.25)}.background-white-25{background-color:rgba(247,247,247,.25)}/*# sourceMappingURL=index.css.map */
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.m-xs {
+  margin: 0.25rem;
+}
+
+.p-xs {
+  padding: 0.25rem;
+}
+
+.m-sm {
+  margin: 0.5rem;
+}
+
+.p-sm {
+  padding: 0.5rem;
+}
+
+.m-md {
+  margin: 1rem;
+}
+
+.p-md {
+  padding: 1rem;
+}
+
+.m-lg {
+  margin: 2rem;
+}
+
+.p-lg {
+  padding: 2rem;
+}
+
+.m-xl {
+  margin: 4rem;
+}
+
+.p-xl {
+  padding: 4rem;
+}
+
+.w-xs {
+  width: 20rem;
+}
+
+.h-xs {
+  height: 20rem;
+}
+
+.w-sm {
+  width: 30rem;
+}
+
+.h-sm {
+  height: 30rem;
+}
+
+.w-md {
+  width: 40rem;
+}
+
+.h-md {
+  height: 40rem;
+}
+
+.w-lg {
+  width: 50rem;
+}
+
+.h-lg {
+  height: 50rem;
+}
+
+.w-xl {
+  width: 60rem;
+}
+
+.h-xl {
+  height: 60rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.w-max {
+  width: max-content;
+}
+
+.h-max {
+  height: max-content;
+}
+
+.w-min {
+  width: min-content;
+}
+
+.h-min {
+  height: min-content;
+}
+
+.color-black {
+  color: rgb(33, 33, 33);
+}
+
+.background-black {
+  background-color: rgb(33, 33, 33);
+}
+
+.color-black-75 {
+  color: rgba(33, 33, 33, 0.75);
+}
+
+.background-black-75 {
+  background-color: rgba(33, 33, 33, 0.75);
+}
+
+.color-black-50 {
+  color: rgba(33, 33, 33, 0.5);
+}
+
+.background-black-50 {
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
+.color-black-25 {
+  color: rgba(33, 33, 33, 0.25);
+}
+
+.background-black-25 {
+  background-color: rgba(33, 33, 33, 0.25);
+}
+
+.color-white {
+  color: rgb(247, 247, 247);
+}
+
+.background-white {
+  background-color: rgb(247, 247, 247);
+}
+
+.color-white-75 {
+  color: rgba(247, 247, 247, 0.75);
+}
+
+.background-white-75 {
+  background-color: rgba(247, 247, 247, 0.75);
+}
+
+.color-white-50 {
+  color: rgba(247, 247, 247, 0.5);
+}
+
+.background-white-50 {
+  background-color: rgba(247, 247, 247, 0.5);
+}
+
+.color-white-25 {
+  color: rgba(247, 247, 247, 0.25);
+}
+
+.background-white-25 {
+  background-color: rgba(247, 247, 247, 0.25);
+}
+
+.dir-flex {
+  display: flex;
+}
+
+.dir-block {
+  display: block;
+}
+
+.dir-initial {
+  display: initial;
+}
+
+.dir-inherit {
+  display: inherit;
+}
+
+.dir-none {
+  display: none;
+}
+
+.dir-inline {
+  display: inline;
+}
+
+.dir-inline-block {
+  display: inline-block;
+}
+
+.dir-inline-flex {
+  display: inline-flex;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-initial {
+  justify-content: initial;
+}
+
+.justify-inherit {
+  justify-content: inherit;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-initial {
+  flex-direction: initial;
+}
+
+.flex-inherit {
+  flex-direction: inherit;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -5,7 +5,8 @@
   "main": "dist/index.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/index.scss dist/index.css --style=compressed"
+    "build": "sass src/index.scss dist/index.css --style=compressed",
+    "watch": "sass --watch src/index.scss dist/index.css"
   },
   "repository": {
     "type": "git",

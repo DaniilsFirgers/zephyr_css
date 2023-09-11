@@ -1,4 +1,5 @@
 node_modules/
+tmp-ui/
 .sass-cache/
 *.css.map
 *.sass.map

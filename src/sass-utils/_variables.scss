@@ -7,30 +7,52 @@ $spacing: (
 );
 
 @each $key, $value in $spacing {
-    .m-#{$key} {
-      margin: $value;
-    }
-    .p-#{$key} {
-      padding: $value;
-    }
+  .m-#{$key} {
+    margin: $value;
   }
+  .p-#{$key} {
+    padding: $value;
+  }
+}
 
-  $colors: (
-    "black": rgb(33, 33, 33),
-    "black-75": rgba(33, 33, 33, 0.75),
-    "black-50": rgba(33, 33, 33, 0.5),
-    "black-25": rgba(33, 33, 33, 0.25),
-    "white": rgb(247, 247, 247),
-    "white-75": rgba(247, 247, 247, 0.75),
-    "white-50": rgba(247, 247, 247, 0.5),
-    "white-25": rgba(247, 247, 247, 0.25),
-  );
-  
-  @each $key, $value in $colors {
-    .color-#{$key} {
-      color: $value;
-    }
-    .background-#{$key} {
-      background-color: $value;
-    }
+$dimension: (
+  'xs': (w: 20rem, h: 20rem),
+  'sm': (w: 30rem, h: 30rem),
+  'md': (w: 40rem, h: 40rem),
+  'lg': (w: 50rem, h: 50rem),
+  'xl': (w: 60rem, h: 60rem),
+  'full': (w: 100%, h: 100%),
+  'screen': (w: 100vw, h: 100vh),
+  'fit': (w: fit-content, h: fit-content),
+  'max': (w: max-content, h: max-content),
+  'min': (w: min-content, h: min-content),
+);
+
+@each $key, $value in $dimension {
+  .w-#{$key} {
+    width: map-get($value, w);
   }
+  .h-#{$key} {
+    height: map-get($value, h);
+  }
+}
+
+$colors: (
+  "black": rgb(33, 33, 33),
+  "black-75": rgba(33, 33, 33, 0.75),
+  "black-50": rgba(33, 33, 33, 0.5),
+  "black-25": rgba(33, 33, 33, 0.25),
+  "white": rgb(247, 247, 247),
+  "white-75": rgba(247, 247, 247, 0.75),
+  "white-50": rgba(247, 247, 247, 0.5),
+  "white-25": rgba(247, 247, 247, 0.25),
+);
+  
+@each $key, $value in $colors {
+  .color-#{$key} {
+    color: $value;
+  }
+  .background-#{$key} {
+    background-color: $value;
+  }
+}
