@@ -7,6 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass src/index.scss dist/index.css --style=compressed"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaniilsFirgers/zephyr_css.git"
+  },
+  "homepage": "https://github.com/DaniilsFirgers/zephyr_css",
+  "issues": "https://github.com/DaniilsFirgers/zephyr_css/issues",
   "keywords": [],
   "author": "Daniils Firgers",
   "license": "MIT",
