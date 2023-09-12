@@ -1,4 +1,7 @@
+// Spacings
 $spacing: (
+  'none': 0,
+  'auto': auto,
   'xs': 0.25rem,
   'sm': 0.5rem,
   'md': 1rem,
@@ -10,17 +13,42 @@ $spacing: (
   .m-#{$key} {
     margin: $value;
   }
+  .m-top-#{$key} {
+    margin-top: $value;
+  }
+  .m-right-#{$key} {
+    margin-right: $value;
+  }
+  .m-bottom-#{$key} {
+    margin-bottom: $value;
+  }
+  .m-left-#{$key} {
+    margin-left: $value;
+  }
   .p-#{$key} {
     padding: $value;
   }
+  .p-top-#{$key} {
+    padding-top: $value;
+  }
+  .p-right-#{$key} {
+    padding-right: $value;
+  }
+  .p-bottom-#{$key} {
+    padding-bottom: $value;
+  }
+  .p-left-#{$key} {
+    padding-left: $value;
+  }
 }
 
+// Dimensions
 $dimension: (
-  'xs': (w: 20rem, h: 20rem),
-  'sm': (w: 30rem, h: 30rem),
-  'md': (w: 40rem, h: 40rem),
-  'lg': (w: 50rem, h: 50rem),
-  'xl': (w: 60rem, h: 60rem),
+  'xs': (w: 5rem, h: 5rem),
+  'sm': (w: 10rem, h: 10rem),
+  'md': (w: 20rem, h: 20rem),
+  'lg': (w: 30rem, h: 30rem),
+  'xl': (w: 40rem, h: 40rem),
   'full': (w: 100%, h: 100%),
   'screen': (w: 100vw, h: 100vh),
   'fit': (w: fit-content, h: fit-content),
@@ -32,11 +60,28 @@ $dimension: (
   .w-#{$key} {
     width: map-get($value, w);
   }
+  .max-w-#{$key} {
+    width: auto;
+    max-width: map-get($value, w);
+  }
+  .min-w-#{$key} {
+    width: auto;
+    min-width: map-get($value, w);
+  }
   .h-#{$key} {
     height: map-get($value, h);
   }
+  .max-h-#{$key} {
+    height: auto;
+    max-height: map-get($value, h);
+  }
+  .min-h-#{$key} {
+    height: auto;
+    min-height: map-get($value, h);
+  }
 }
 
+// Colors
 $colors: (
   "black": rgb(33, 33, 33),
   "black-75": rgba(33, 33, 33, 0.75),
@@ -47,12 +92,65 @@ $colors: (
   "white-50": rgba(247, 247, 247, 0.5),
   "white-25": rgba(247, 247, 247, 0.25),
 );
-  
+
 @each $key, $value in $colors {
   .color-#{$key} {
     color: $value;
   }
-  .background-#{$key} {
+  .bg-#{$key} {
     background-color: $value;
+  }
+}
+
+// Font weights
+$font-weight: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+@each $key, $value in $font-weight {
+  .font-#{$key} {
+    font-weight: $value;
+  }
+}
+
+
+// Font Sizes
+$font-sizes: (
+  "xs": 0.75rem,
+  "sm": 0.875rem,
+  "md": 1rem,
+  "lg": 1.125rem,
+  "xl": 1.25rem,
+  "2xl": 1.5rem,
+  "3xl": 1.875rem,
+  "4xl": 2.25rem,
+  "5xl": 3rem,
+  "6xl": 4rem,
+);
+
+@each $key, $value in $font-sizes {
+  .text-#{$key} {
+    font-size: $value;
+  }
+}
+
+
+// Borders
+$border: (
+  "none": none,
+  "xs": 1px,
+  "sm": 2px,
+  "md": 4px,
+  "lg": 8px,
+  "xl": 16px,
+  "full": 50%
+);
+
+@each $key, $value in $border {
+  .rounded-#{$key} {
+    border-radius: $value;
   }
 }

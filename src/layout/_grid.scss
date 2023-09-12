@@ -1,3 +1,18 @@
+$position: (
+    'relative': relative,
+    'absolute': absolute,
+    'fixed': fixed,
+    'static': static,
+    'sticky': sticky,
+);
+
+@each $key, $value in $position {
+    .#{$key} {
+        position: $value;
+    }
+}
+
+
 $display: (
     'flex': flex,
     'block': block,

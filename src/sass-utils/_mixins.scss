@@ -1,0 +1,30 @@
+$theme-text-colors: (
+    DarkGray: rgb(33, 33, 33),
+    Blue: rgb(72, 143, 219),
+    Yellow: rgb(129, 98, 4),
+    Red: rgb(100, 8, 17),
+    Green: rgb(6, 206, 59),
+);
+
+@mixin theme($theme: DarkGray) {
+    background-color: $theme;
+    color: map-get($theme-text-colors, $theme);
+    box-shadow:  0 4px 8px 0 rgba($theme, 0.3), 0 6px 20px 0 rgba($theme, 0.3);
+    border-radius: 10px;
+}
+
+.info {
+    @include theme(Blue);
+}
+
+.warning {
+    @include theme(Yellow);
+}
+
+.error {
+    @include theme(Red);
+}
+
+.success {
+    @include theme(Green);
+}
