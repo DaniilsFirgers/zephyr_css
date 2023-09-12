@@ -154,3 +154,31 @@ $border: (
     border-radius: $value;
   }
 }
+
+// Text alignment
+$alignment: (
+  "left": left,
+  "center": center,
+  "right": right,
+);
+
+@each $key, $value in $alignment {
+  .text-#{$key} {
+    text-align: $value;
+  }
+}
+
+// Text decoration
+
+$text-decoration: (
+  "none": none,
+  "underline": underline,
+  "overline": overline,
+  "line-through": line-through,
+);
+
+@each $key, $value in $text-decoration {
+  .text-#{$key} {
+    text-decoration: $value;
+  }
+}
