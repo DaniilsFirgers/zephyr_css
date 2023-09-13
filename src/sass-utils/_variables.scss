@@ -91,6 +91,63 @@ $colors: (
   "white-75": rgba(247, 247, 247, 0.75),
   "white-50": rgba(247, 247, 247, 0.5),
   "white-25": rgba(247, 247, 247, 0.25),
+  "gray": rgb(128, 128, 128),
+  "gray-75": rgba(128, 128, 128, 0.75),
+  "gray-50": rgba(128, 128, 128, 0.5),
+  "gray-25": rgba(128, 128, 128, 0.25),
+  "red": rgb(255, 0, 0),
+  "red-75": rgba(255, 0, 0, 0.75),
+  "red-50": rgba(255, 0, 0, 0.5),
+  "red-25": rgba(255, 0, 0, 0.25),
+  "green": rgb(0, 255, 0),
+  "green-75": rgba(0, 255, 0, 0.75),
+  "green-50": rgba(0, 255, 0, 0.5),
+  "green-25": rgba(0, 255, 0, 0.25),
+  "blue": rgb(0, 0, 255),
+  "blue-75": rgba(0, 0, 255, 0.75),
+  "blue-50": rgba(0, 0, 255, 0.5),
+  "blue-25": rgba(0, 0, 255, 0.25),
+  "yellow": rgb(255, 255, 0),
+  "yellow-75": rgba(255, 255, 0, 0.75),
+  "yellow-50": rgba(255, 255, 0, 0.5),
+  "yellow-25": rgba(255, 255, 0, 0.25),
+  "purple": rgb(128, 0, 128),
+  "purple-75": rgba(128, 0, 128, 0.75),
+  "purple-50": rgba(128, 0, 128, 0.5),
+  "purple-25": rgba(128, 0, 128, 0.25),
+  "cyan": rgb(0, 255, 255),
+  "cyan-75": rgba(0, 255, 255, 0.75),
+  "cyan-50": rgba(0, 255, 255, 0.5),
+  "cyan-25": rgba(0, 255, 255, 0.25),
+  "magenta": rgb(255, 0, 255),
+  "magenta-75": rgba(255, 0, 255, 0.75),
+  "magenta-50": rgba(255, 0, 255, 0.5),
+  "magenta-25": rgba(255, 0, 255, 0.25),
+  "transparent": transparent,
+  "orange": rgb(255, 165, 0),
+  "orange-75": rgba(255, 165, 0, 0.75),
+  "orange-50": rgba(255, 165, 0, 0.5),
+  "orange-25": rgba(255, 165, 0, 0.25),
+  "pink": rgb(255, 192, 203),
+  "pink-75": rgba(255, 192, 203, 0.75),
+  "pink-50": rgba(255, 192, 203, 0.5),
+  "pink-25": rgba(255, 192, 203, 0.25),
+  "brown": rgb(165, 42, 42),
+  "brown-75": rgba(165, 42, 42, 0.75),
+  "brown-50": rgba(165, 42, 42, 0.5),
+  "brown-25": rgba(165, 42, 42, 0.25),
+  "lime": rgb(0, 255, 0),
+  "lime-75": rgba(0, 255, 0, 0.75),
+  "lime-50": rgba(0, 255, 0, 0.5),
+  "lime-25": rgba(0, 255, 0, 0.25),
+  "indigo": rgb(75, 0, 130),
+  "indigo-75": rgba(75, 0, 130, 0.75),
+  "indigo-50": rgba(75, 0, 130, 0.5),
+  "indigo-25": rgba(75, 0, 130, 0.25),
+  "teal": rgb(0, 128, 128), 
+  "teal-75": rgba(0, 128, 128, 0.75),
+  "teal-50": rgba(0, 128, 128, 0.5),
+  "teal-25": rgba(0, 128, 128, 0.25),
 );
 
 @each $key, $value in $colors {
@@ -138,7 +195,7 @@ $font-sizes: (
 }
 
 
-// Borders
+// Border radius
 $border-radius: (
   "none": none,
   "xs": 1px,
@@ -155,6 +212,7 @@ $border-radius: (
   }
 }
 
+// Border style
 $border-style :(
   "none": none,
   "solid": solid,
@@ -172,6 +230,10 @@ $border-style :(
     border-style: $value;
   }
 }
+
+
+// Border color
+
 
 
 // Text alignment
