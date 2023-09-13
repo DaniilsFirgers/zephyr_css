@@ -226,14 +226,18 @@ $border-style :(
 );
 
 @each $key, $value in $border-style {
-  .border-#{$key} {
+  .border-style-#{$key} {
     border-style: $value;
   }
 }
 
 
 // Border color
-
+@each $key, $value in $colors {
+  .border-color-#{$key} {
+    border-color: $value;
+  }
+}
 
 
 // Text alignment
