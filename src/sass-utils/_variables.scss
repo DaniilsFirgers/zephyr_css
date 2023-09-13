@@ -139,7 +139,7 @@ $font-sizes: (
 
 
 // Borders
-$border: (
+$border-radius: (
   "none": none,
   "xs": 1px,
   "sm": 2px,
@@ -149,11 +149,30 @@ $border: (
   "full": 50%
 );
 
-@each $key, $value in $border {
+@each $key, $value in $border-radius {
   .rounded-#{$key} {
     border-radius: $value;
   }
 }
+
+$border-style :(
+  "none": none,
+  "solid": solid,
+  "dashed": dashed,
+  "dotted": dotted,
+  "double": double,
+  "groove": groove,
+  "ridge": ridge,
+  "inset": inset,
+  "outset": outset,
+);
+
+@each $key, $value in $border-style {
+  .border-#{$key} {
+    border-style: $value;
+  }
+}
+
 
 // Text alignment
 $alignment: (

@@ -1,6 +1,6 @@
 {
   "name": "yacssl",
-  "version": "1.0.4",
+  "version": "1.1.1",
   "description": "Yet another css library",
   "main": "dist/index.css",
   "scripts": {
